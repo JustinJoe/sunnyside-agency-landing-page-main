@@ -1,0 +1,44 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+  font-family: var(--primary-font);
+}
+
+:root {
+  /* Primary Colors  */
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  /* (graphic design text) */
+  --cyan: hsl(167, 40%, 24%);
+  --dark-blue-photography-text: hsl(198, 62%, 26%);
+  --dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+
+  /* Neutral Colors*/
+  --dark-desaturated-blue: hsl(212, 27%, 19%);
+  --darker-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --primary-font: "Barlow", sans-serif;
+  --secondary-font: "Fraunces", serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* body {
+  background-color: black;
+  color: white;
+} */
+
+a {
+  text-decoration: none;
+}
