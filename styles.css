@@ -29,16 +29,92 @@
   --secondary-font: "Fraunces", serif;
 }
 
+header {
+  background-image: url("images/mobile/image-header.jpg");
+  background-size: cover;
+}
+
+nav {
+  display: none;
+}
+
+.nav-key {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--white);
+  text-decoration: none;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* body {
-  background-color: black;
-  color: white;
-} */
+/*Welcome Section*/
+.welcome {
+  padding: 5rem 0;
+  color: var(--white);
+  text-align: center;
+}
 
-a {
-  text-decoration: none;
+.welcome h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: var(--secondary-font);
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  padding-bottom: 3rem;
+}
+
+.welcome img {
+  padding-bottom: 5rem;
+}
+
+/*Works*/
+.works {
+  text-align: center;
+}
+
+.text {
+  padding: 2rem 0;
+}
+.text > * {
+  padding-top: 1.5rem;
+}
+
+.text h2 {
+  font-size: 1.75rem;
+  font-family: var(--secondary-font);
+  font-weight: 900;
+}
+
+.text p {
+  color: var(--dark-grayish-blue);
+}
+
+.link {
+  text-transform: uppercase;
+  font-family: var(--secondary-font);
+  color: black;
+  text-decoration: 5px underline var(--yellow);
 }

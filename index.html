@@ -14,6 +14,12 @@
 
     <title>Frontend Mentor | Sunnyside agency landing page</title>
 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles.css" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
@@ -28,23 +34,36 @@
   </head>
   <body>
     <header>
-      <nav>
+      <div class="container nav-key">
         <a href=""><img src="images/logo.svg" alt="logo" /></a>
-        <ul>
-          <li><a href="about">About</a></li>
-          <li><a href="services">Services</a></li>
-          <li><a href="projects">Projects</a></li>
-          <li><a href="contact">Contact</a></li>
+        <div class="hamburger-menu">
+          <img src="images/icon-hamburger.svg" alt="" />
+        </div>
+      </div>
+      <nav>
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="services" class="nav-link">Services</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact" class="nav-link">Contact</a>
+          </li>
         </ul>
       </nav>
+
+      <div class="welcome container">
+        <h1>We are creatives</h1>
+        <img src="images/icon-arrow-down.svg" alt="" />
+      </div>
     </header>
 
-    <section class="welcome">
-      <h1>We are creatives</h1>
-      <img src="images/icon-arrow-down.svg" alt="" />
-    </section>
-
-    <section class="slide">
+    <section class="works">
       <div class="img">
         <img src="images/mobile/image-transform.jpg" alt="" />
       </div>
@@ -55,7 +74,7 @@
           grow fast. Engage your clients through compelling visuals that do most
           of the marketing for you.
         </p>
-        <p><a href="">Learn more</a></p>
+        <p><a href="#" class="link">Learn more</a></p>
       </div>
     </section>
 
