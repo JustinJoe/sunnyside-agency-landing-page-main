@@ -32,6 +32,7 @@
 header {
   background-image: url("images/mobile/image-header.jpg");
   background-size: cover;
+  height: 100vh;
 }
 
 nav {
@@ -192,10 +193,21 @@ img {
 
 footer {
   background-color: var(--dark-moderate-cyan-footer);
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.company-name {
+  /* font-size: 1.5rem;
+  color: var(--cyan);*/
 }
 
 .footer-nav li {
   list-style: none;
+  color: var(--cyan);
 }
 
 .footer-nav ul,
@@ -203,4 +215,5 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: var(--cyan);
 }
