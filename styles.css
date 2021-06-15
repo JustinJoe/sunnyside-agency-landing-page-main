@@ -30,13 +30,20 @@
 }
 
 header {
-  background-image: url("images/mobile/image-header.jpg");
+  background: url("images/mobile/image-header.jpg") no-repeat center;
   background-size: cover;
   height: 100vh;
 }
 
-nav {
+.nav {
   display: none;
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-key {
@@ -48,13 +55,6 @@ nav {
 .container {
   width: 90%;
   margin: auto;
-}
-
-.nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .nav-item {
@@ -73,22 +73,23 @@ img {
 
 /*Welcome Section*/
 .welcome {
-  padding: 5rem 0;
+  padding: 10rem 0;
   color: var(--white);
   text-align: center;
 }
 
 .welcome h1 {
-  font-size: 2rem;
+  font-size: 3.25rem;
   font-weight: 900;
   font-family: var(--secondary-font);
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.75rem;
+  line-height: 1.5;
   padding-bottom: 3rem;
 }
 
 .welcome img {
-  padding-bottom: 5rem;
+  padding-top: 5rem;
 }
 
 /*Works*/
@@ -133,24 +134,30 @@ img {
 }
 
 .div-1 {
-  background: url("images/mobile/image-graphic-design.jpg");
+  background: url("images/mobile/image-graphic-design.jpg") no-repeat center;
   background-size: cover;
   color: var(--cyan);
-  height: 100vh;
+  height: 80vh;
 }
 
 .div-2 {
-  background: url("images/mobile/image-photography.jpg");
+  background: url("images/mobile/image-photography.jpg") no-repeat center;
+  background-size: cover;
   color: var(--dark-blue-photography-text);
-  height: 100vh;
+  height: 80vh;
 }
 
 .div-1 h3,
 .div-2 h3 {
   font-family: var(--secondary-font);
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 2.5rem;
-  margin-top: 75vh;
+  margin-top: 50vh;
+}
+
+.div-1 p,
+.div-2 p {
+  font-size: 1.25rem;
 }
 
 .testimonials {
@@ -187,8 +194,6 @@ img {
 /*FOOTER*/
 .footer-images {
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 footer {
@@ -200,11 +205,6 @@ footer {
   align-items: center;
 }
 
-.company-name {
-  /* font-size: 1.5rem;
-  color: var(--cyan);*/
-}
-
 .footer-nav li {
   list-style: none;
   color: var(--cyan);
@@ -213,7 +213,18 @@ footer {
 .footer-nav ul,
 .sm-links {
   display: flex;
-  justify-content: space-around;
+  gap: 2em;
   align-items: center;
   color: var(--cyan);
 }
+
+.footer-nav ul li {
+  font-size: 1.5rem;
+}
+
+/*
+Work on hover and other states 
+fonts
+background images
+website // media query
+*/
