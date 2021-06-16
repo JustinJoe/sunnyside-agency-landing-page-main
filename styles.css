@@ -15,7 +15,7 @@
   /* (graphic design text) */
   --cyan: hsl(167, 40%, 24%);
   --dark-blue-photography-text: hsl(198, 62%, 26%);
-  --dark-moderate-cyan-footer: hsl(168, 34%, 41%);
+  --dark-moderate-cyan-footer: rgba(69, 140, 126, 0.6);
 
   /* Neutral Colors*/
   --dark-desaturated-blue: hsl(212, 27%, 19%);
@@ -37,13 +37,20 @@ header {
 
 .nav {
   display: none;
+  background-color: var(--white);
+  padding-bottom: 4em;
+  margin-top: 4em;
 }
 
-.show {
+.visible {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+}
+
+.invisible {
+  display: none;
 }
 
 .nav-key {
@@ -59,11 +66,23 @@ header {
 
 .nav-item {
   list-style: none;
+  padding-top: 3em;
 }
 
 .nav-link {
-  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--dark-grayish-blue);
   text-decoration: none;
+}
+
+.nav-item .contact {
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 1em;
+  border-radius: 2em;
+  background-color: var(--yellow);
+  color: var(--darker-grayish-blue);
 }
 
 img {
@@ -201,8 +220,13 @@ footer {
   height: 50vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 700;
+}
+
+.footer-logo {
+  display: flex;
+  justify-content: center;
 }
 
 .footer-nav li {
@@ -210,12 +234,17 @@ footer {
   color: var(--cyan);
 }
 
-.footer-nav ul,
+.footer-nav-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .sm-links {
   display: flex;
   gap: 2em;
-  align-items: center;
+  justify-content: center;
   color: var(--cyan);
+  font-weight: 700;
 }
 
 .footer-nav ul li {
@@ -225,6 +254,37 @@ footer {
 /*
 Work on hover and other states 
 fonts
-background images
+.bg-img flex
 website // media query
 */
+
+/*Tablet*/
+@media (min-width: 40em) {
+  .hamburger-menu {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    background-color: none;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+
+  .works,
+  .slide {
+    display: flex;
+  }
+
+  .works .img {
+    order: 2;
+  }
+
+  .works .text {
+    order: 1;
+  }
+
+  .testimonials {
+    flex-direction: row;
+  }
+}
